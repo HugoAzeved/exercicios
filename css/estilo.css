@@ -2,24 +2,24 @@
 
 /*ocultar o tilo do corpo do documento dentro do <header>*/
 
-.cabecalho{
-    display: flex;
-    align-items: center;
+.logo{
+    overflow: hidden;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
 }
 
-.cabecalho a{
-    margin-right: auto;
-}
 
 h1 {
     /*display= none */
+    background-color: rgb(127, 255, 227);
+    padding: 100px;
     text-align: center;
-    background-color: aquamarine;
 }
 
 #menu {
+    word-spacing: 100px;
     text-align: center;
-    background-color: #c9c9c9;
+    background-color: rgb(120, 173, 253);
     padding: 10px;
-
 }
