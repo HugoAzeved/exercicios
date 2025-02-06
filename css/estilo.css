@@ -1,0 +1,25 @@
+/* folha de estilo */
+
+/*ocultar o tilo do corpo do documento dentro do <header>*/
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho a{
+    margin-right: auto;
+}
+
+h1 {
+    /*display= none */
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#menu {
+    text-align: center;
+    background-color: #c9c9c9;
+    padding: 10px;
+
+}
