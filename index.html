@@ -4,40 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilo.css">
+    <!--  Carrega o CSS da página -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--  Meta tags para SEO -->
+    <meta name="author" content="Hugo Azevedo">
+    <meta name="keyword" content="cão, gato, pet, saúde, pelos, patas">
+    <!-- Inclui o icone de favorito (mostrando na barra de tarefas)-->
+    <link rel="shortcut icon" href="/img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>PesteGardian</title>
 </head>
 
 <body>
-
-    <header>
-        <div>
+    <div id="warp">
+        <header>
             <a href="index.html">
                 <img class="logo" src="/img/logo.png" alt="logo do site">
             </a>
             <h1>PesteGardian</h1>
-        </div>
-        
+        </header>
+
         <nav>
             <div id="menu">
-                <a href="index.html">Home</a>
+                <a href="index.html">Inicio</a>
                 <a href="index.html">Sobre</a>
                 <a href="index.html">Contato</a>
                 <a href="index.html">Login</a>
+                <a href="busca.html">BUSCA</a>
             </div>
         </nav>
 
-    </header>
+        <main>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore corporis, et autem ipsum velit
+                ducimus, reprehenderit obcaecati, dolores eaque enim aliquam officia quia ipsam provident dolorem!
+                Autem,
+                voluptates id.
+            </article>
 
+            <aside>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique.
+            </aside>
 
-    <main></main>
+        </main>
 
-    <footer>
-        <div id="andar1">Veja tambem</div>
-        <div id="andar2">fala conosco</div>
-    </footer>
+        <footer>
 
+            <!--primeiro andar - licensa-->
+            <div class="andar-1">
+                <a href="index.html">
+                    <i class="fa-solid fa-house-chimney-user"></i>
+                </a>
+
+                <!--Licensa-->
+                <div>&copy; Copyright 2025 PesteGardian</div>
+
+                <!--acesso ao topo da pagina-->
+                <a href="#wrap">
+                    <i class="fa-solid fa-turn-up"></i>
+                </a>
+
+            </div>
+            <!--segundo andar - links-->
+            <div class="andar-2">
+                <!--menu com redes sociais-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com/PesteGardian" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i> facebook
+                            </a>
+                            </i>
+                        <li>
+                            <a href="https://instagram.com/PesteGardian" target="_blank">
+                                <i class="fa-brands fa-instagram"></i> instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/PesteGardian" target="_blank">
+                                <i class="fa-brands fa-youtube"></i> Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wswhatssap.com/PesteGardian" target="_blank">
+                                <i class="fa-brands fa-square-whatsapp"></i> Whats
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--terceiro andar - contato-->
+            <div class="andar-3"></div>
+        </footer>
+    </div>
 </body>
 
 </html>
