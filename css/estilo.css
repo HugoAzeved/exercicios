@@ -65,6 +65,38 @@ header h1 {
     text-decoration: none;
 }
 
-.andar-2 ul a:hover{
+.andar-2 ul a:hover {
     color: snow;
+}
+
+/*
+ * Estilização do formulário de contato.
+ */
+
+#formContatos {
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+#formContatos label {
+    display: block;
+    padding: .25rem .5rem;
+}
+
+#formContatos input,
+#formContatos textarea {
+    width: 100%;
+    background-color: rgb(255, 235, 235);
+    border: 1px solid red;
+    border-radius: .9rem;
+    border-bottom: 3px solid red;
+    padding: .5rem 1rem;
+    
+}
+
+#formContatos textarea {
+    height: 7rem;
+    resize: vertical;
 }
