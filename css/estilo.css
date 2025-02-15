@@ -90,13 +90,43 @@ header h1 {
     width: 100%;
     background-color: rgb(255, 235, 235);
     border: 1px solid red;
-    border-radius: .9rem;
+    border-radius: .3rem;
     border-bottom: 3px solid red;
     padding: .5rem 1rem;
-    
+
 }
 
 #formContatos textarea {
     height: 7rem;
     resize: vertical;
+}
+
+#formContatos button {
+    background-color: #a09dc9;
+    color: #000000;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    pointer-events: none;
+    /*desabilita o clique do botão*/
+}
+
+#formContatos input:valid,
+#formContatos textarea:valid {
+    width: 100%;
+    background-color: rgb(233, 240, 254);
+    border: 1px solid #49bafc;
+    border-bottom: 3px solid #49bafc;
+}
+
+/*botão para formulario valido*/
+#formContatos:valid button {
+    pointer-events: all;
+    /*habilita o clik do botão*/
+    background-color: #49bafc;
+    cursor: pointer;
+}
+
+.icones{
+    
 }
