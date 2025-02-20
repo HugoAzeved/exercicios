@@ -18,29 +18,6 @@ body,
     font-size: 16px;
 }
 
-/* Definição do fundo da página 
-
-body {
-    background-image: url(/img/fundo.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-#wrap {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1480px;
-    margin: auto;
-}
-
-main {
-    background:white;
-    flex-grow: 1;
-} 
-*/
-
 #wrap {
     font-family: monospace;
     position: relative;
@@ -116,7 +93,7 @@ header h1 {
 }
 
 #formContatos button {
-    background-color: #a09dc9;
+    background-color: #31a96e;
     color: #000000;
     border: none;
     border-radius: .5rem;
@@ -137,6 +114,7 @@ header h1 {
 #formContatos:valid button {
     pointer-events: all;
     /*habilita o clik do botão*/
-    background-color: #49bafc;
+    color: #f0ffff;
+    background-color: #21b835;
     cursor: pointer;
 }
