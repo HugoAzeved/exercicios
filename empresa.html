@@ -45,6 +45,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="download.html">Download</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Loja.html">Loja</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">outros</a>
@@ -56,10 +60,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html"><i class="fa-solid fa-magnifying-glass"></i>
-                                <!-- Mostra o SPAn abaixo somente em telas "sm" (small) -->
-                                <span class="d-inline d-sm-none">Procurar</span>
-                            </a>
+                            <span class="nav-link" href="procurar.html" data-bs-toggle="modal"
+                            data-bs-target="#dialogFormBusca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- Mostra o SPAM abaixo somente em telas "sm" (small) -->
+                            <span class="d-inline d-sm-none">Procurar</span>
+                        </span>
                         </li>
                     </ul>
                 </div>
@@ -151,6 +157,30 @@
                 </nav>
             </div>
         </footer>
+    </div>
+
+    <!-- Modal e popup com formulário de busca -->
+    <!-- The Modal -->
+    <div class="modal fade" id="dialogFormBusca">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Procurar</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="procurar.html" method="get" class="input-group">
+                        <input type="search" name="q" class="form-control">
+                        <button type="submit" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 

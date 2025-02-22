@@ -27,18 +27,21 @@ body,
 }
 
 header {
-    background-color: #7fffe3;
+    background-color: rgb(128, 255, 227);
+}
+/* h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header h1 {
     margin: 0;
     padding: 2rem;
-}
+} */
 
 .logo {
     display: block;
     float: left;
-    width: 5rem;
+    width: 20rem;
     height: auto;
     margin-right: .7px;
 }
@@ -118,3 +121,9 @@ header h1 {
     background-color: #21b835;
     cursor: pointer;
 }
+
+/* Escurece o fundo da página com o dialog */
+dialog::backdrop {
+    background: #00000080;
+}
+

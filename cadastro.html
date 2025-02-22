@@ -46,6 +46,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="download.html">Download</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Loja.html">Loja</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">outros</a>
@@ -57,10 +61,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html"><i class="fa-solid fa-magnifying-glass"></i>
-                                <!-- Mostra o SPAn abaixo somente em telas "sm" (small) -->
-                                <span class="d-inline d-sm-none">Procurar</span>
-                            </a>
+                            <span class="nav-link" href="procurar.html" data-bs-toggle="modal"
+                            data-bs-target="#dialogFormBusca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- Mostra o SPAM abaixo somente em telas "sm" (small) -->
+                            <span class="d-inline d-sm-none">Procurar</span>
+                        </span>
                         </li>
                     </ul>
                 </div>
@@ -85,8 +91,8 @@
 
                         <p>
                             <label for="campoEspecie">Espécie:</label>
-                            <input type="text" name="nome" id="campoEspecie" placeholder="Espécie do animal" minlength="3"
-                                required>
+                            <input type="text" name="nome" id="campoEspecie" placeholder="Espécie do animal"
+                                minlength="3" required>
 
                         </p>
 
@@ -96,14 +102,13 @@
                         </p>
 
                         <p>
-                            <label for="campoRaca">Raça do animal (se aplicável):</label>
-                            <input type="text" name="raca" id="campoRaca" placeholder="..." minlength="3">
+                            <label for="campoRaca">Raça do animal:</label>
+                            <input type="text" name="raca" id="campoRaca" placeholder="(se aplicável)" minlength="3">
                         </p>
 
                         <p>
                             <label for="campoEmail">E-mail do Tutor:</label>
-                            <input type="email" name="email" id="campoEmail" placeholder="Digite seu E-mail"
-                                required>
+                            <input type="email" name="email" id="campoEmail" placeholder="Digite seu E-mail" required>
 
                         </p>
 
@@ -194,6 +199,31 @@
             </div>
         </footer>
     </div>
+    
+    <!-- Modal e popup com formulário de busca -->
+    <!-- The Modal -->
+    <div class="modal fade" id="dialogFormBusca">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Procurar</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="procurar.html" method="get" class="input-group">
+                        <input type="search" name="q" class="form-control">
+                        <button type="submit" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

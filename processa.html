@@ -45,6 +45,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="download.html">Download</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Loja.html">Loja</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown">outros</a>
@@ -56,10 +60,12 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="procurar.html"><i class="fa-solid fa-magnifying-glass"></i>
-                                <!-- Mostra o SPAn abaixo somente em telas "sm" (small) -->
-                                <span class="d-inline d-sm-none">Procurar</span>
-                            </a>
+                            <span class="nav-link" href="procurar.html" data-bs-toggle="modal"
+                            data-bs-target="#dialogFormBusca">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- Mostra o SPAM abaixo somente em telas "sm" (small) -->
+                            <span class="d-inline d-sm-none">Procurar</span>
+                        </span>
                         </li>
                     </ul>
                 </div>
@@ -73,23 +79,23 @@
                     <p class="alert alert-success"> <strong>Sucesso!</strong><br>Seu contato foi enviado com sucesso</p>
                     <p><em>Obrigado</em></p>
                 </article>
-                
+
                 <aside class="col-12 col-md-3">
                     <h2>+ contatos</h2>
                     <p>Você Tambem pode entrar em contato com a nossa equipe pelas nossas redes sociais</p>
 
-                    <div class="icones text-center" >
-                    <a href="https://instagram.com/PesteGardian" target="_blank" style="color: #e1306c;">
-                        <i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                    <div class="icones text-center">
+                        <a href="https://instagram.com/PesteGardian" target="_blank" style="color: #e1306c;">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i></a>
 
-                    <a href="https://facebook.com/PesteGardian" target="_blank" style="color: #1877f2;">
-                        <i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                        <a href="https://facebook.com/PesteGardian" target="_blank" style="color: #1877f2;">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i></a>
 
-                    <a href="https://wa.me/PesteGardian" target="_blank" style="color: #25d366;">
-                        <i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+                        <a href="https://wa.me/PesteGardian" target="_blank" style="color: #25d366;">
+                            <i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
 
-                    <a href="https://telegram.com/PesteGardian" target="_blank" style="color: #0088cc;">
-                        <i class="fa-brands fa-telegram fa-2x"></i></a>
+                        <a href="https://telegram.com/PesteGardian" target="_blank" style="color: #0088cc;">
+                            <i class="fa-brands fa-telegram fa-2x"></i></a>
                     </div>
                 </aside>
             </div>
@@ -134,7 +140,7 @@
                 </nav>
 
                 <!-- Menu com links importantes -->
-                 
+
                 <nav>
                     <ul class="list-unstyled">
                         <li><a href="contatos.html">
@@ -153,6 +159,30 @@
                 </nav>
             </div>
         </footer>
+
+
+        <!-- Modal e popup com formulário de busca -->
+    <!-- The Modal -->
+    <div class="modal fade" id="dialogFormBusca">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Procurar</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="procurar.html" method="get" class="input-group">
+                        <input type="search" name="q" class="form-control">
+                        <button type="submit" class="btn btn-info"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
     </div>
 </body>
 
